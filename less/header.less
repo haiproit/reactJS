@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
+.header {
+    height: 50px;
+    .logo {}
+}
+.menu {
+    background-color: #fbfbfb;
+    text-transform: uppercase;
+    ul {}
+    li {
+        display: inline-block;
+        vertical-align: text-top;
+        &.active {
+            a {
+                background-color: #5a88ca;
+                color: #fff;
+            }
+        }
+    }
+    a {
+        padding: 20px;
+        line-height: 20px;
+        display: block;
+        color: #6e6a6a;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            background-color: #5a88ca;
+            color: #fff;
+        }
+    }
+}

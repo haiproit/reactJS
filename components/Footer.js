@@ -3,7 +3,11 @@ import React from 'react';
 export default class Footer extends React.Component {
     render() {
         return (
-            <h1>Hello</h1>
+            <div className="footer">
+                <div className="container">
+                    @copyright 2017
+                </div>
+            </div>
         );
     }
 }

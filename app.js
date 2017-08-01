@@ -5,7 +5,8 @@ import Header from './components/Header';
 import App from './components/App';
 import Footer from './components/Footer';
 
-import './css/style.css';
+import './css/header.css';
+import './css/footer.css';
 
 ReactDOM.render(
     <div>
