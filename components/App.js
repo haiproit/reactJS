@@ -1,40 +1,34 @@
 import React from "react";
 
-function formatDate(date) {
-    return date.toLocaleDateString();
-}
-function Comment(props) {
+function Comment() {
     return (
-        <div className="container">
-            <div className="Comment">
-                <div className="UserInfo">
-                    <img className="Avatar" src={props.author.avatarUrl} alt={props.author.name} />
-                    <div className="UserInfo-name">{props.author.name}</div>
-                </div>
-                <div className="Comment-text">{props.text}</div>
-                <div className="Comment-date">{formatDate(props.date)}</div>
+        <div className="main">
+            <div className="container">
+                <ul className="row">
+                    <li className="col">
+                        <a href="#">
+                            <img src="./images/item.jpg" alt=""/>
+                            <span className="name">A</span>
+                        </a>
+                    </li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                    <li className="col"><a href="#"><img src="./images/item.jpg" alt=""/></a></li>
+                </ul>
             </div>
         </div>
     );
 }
 
-const comment = {
-    date: new Date(),
-    text: 'Chao ngay moi',
-    author: {
-        name: 'Hello word',
-        avatarUrl: 'http://placekitten.com/g/64/64'
-    }
-};
-
 export default class App extends React.Component {
     render() {
         return (
-            <div style={{textAlign: 'center'}}>
-                <Comment
-                    date={comment.date}
-                    text={comment.text}
-                    author={comment.author}/>
-            </div>);
-    }
+            <Comment />
+        )
+    };
 }

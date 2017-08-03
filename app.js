@@ -6,6 +6,7 @@ import App from './components/App';
 import Footer from './components/Footer';
 
 import './css/header.css';
+import './css/main.css';
 import './css/footer.css';
 
 ReactDOM.render(
